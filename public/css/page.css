@@ -262,11 +262,20 @@ button {
   align-items: center;
   display: flex;
 }
+.logo_ {
+  width: 50px;
+  height: 50px;
+}
 
 .spon_hive {
   margin: 0px;
   padding: 0px;
 }
+
+.margin-left {
+  margin-left: 30px;
+}
+
 .text {
   margin: 0px;
   padding: 0px;
