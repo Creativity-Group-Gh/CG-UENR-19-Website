@@ -23,10 +23,14 @@ h6,
 span.label {
   font-size: 85%;
 }
-
+.s_media_handle {
+  width: 25px;
+  height: 25px;
+}
 .link_text {
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 10px;
+  font-weight: bold;
 }
 
 #navigation a {
@@ -73,6 +77,11 @@ span.label {
 .links {
   text-decoration-line: none;
 }
+
+.spon_hive {
+  margin: 0px;
+}
+
 #heading {
   font-size: 0.9em;
 }
@@ -244,5 +253,21 @@ button {
 
 #social_handles {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.social_handles_content {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.spon_hive {
+  margin: 0px;
+  padding: 0px;
+}
+.text {
+  margin: 0px;
+  padding: 0px;
 }
