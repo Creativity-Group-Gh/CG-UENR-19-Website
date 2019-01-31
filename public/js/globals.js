@@ -1,0 +1,59 @@
+var instructors = [
+  {
+    address: "Hello!",
+    name: "I am Botwe Emmanuel",
+    job1: "I an a Web Back-end Programmer",
+    job2: "I love Algorithms",
+    job3: "and I love Game dev. too"
+  },
+  {
+    address: "Welcome!",
+    name: "I am Edward Gyampo",
+    job1: "I am an Artist",
+    job2: " a Web UI Engineer",
+    job3: "and  a Game Designer"
+  }
+];
+
+var index = 0;
+
+// var head = "Welcome!";
+// var des1 ="Edward Gyampo.";
+// var des2 = "an Artist.";
+// var des3 =  "Web UI Engineer.";
+// var des4 =  "I am a Game Designer.";
+//
+// var raw_text = "Welcome!I am "+des1+"."+des2+".a "+des3+"."+des4+".Explore!";
+//
+//
+var head = "";
+var des1 = "";
+var des2 = "";
+var des3 = "";
+var des4 = "";
+
+var simple_text = "";
+
+async function startBlinkingText() {
+  if (index >= 1) {
+    index = 0;
+  } else {
+    index++;
+  }
+  console.log(index);
+  var temp = await instructors[index];
+
+  head = await temp.address;
+  des1 = temp.name;
+  des2 = temp.job1;
+  des3 = temp.job2;
+  des4 = temp.job3;
+
+  simple_text =
+    head + " " + des1 + " " + des2 + " " + des3 + " " + des4 + " Explore!";
+
+  console.log(temp);
+  let elem = document.querySelector(".typing-simulator__text");
+  elem.innerHTML = "";
+  await startBlinkingTextWrapper();
+}

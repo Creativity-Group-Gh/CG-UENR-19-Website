@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-simulator {
+  display: inline;
+}
+.typing-simulator__text {
+  display: inline;
+}
+.typing-simulator__cursor {
+  display: inline-block;
+  vertical-align: top;
+  width: 3px;
+  height: 3rem;
+}
+.typing-simulator__cursor--active {
+  background-color: #1b1b1b;
+}
+.typing-simulator__cursor--inactive {
+  background-color: transparent;
+}
+.typing-simulator__character {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #ffffff;
+}

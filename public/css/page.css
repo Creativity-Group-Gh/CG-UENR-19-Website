@@ -39,6 +39,10 @@ span.label {
   font-size: 1.2em;
 }
 
+.smaller {
+  font-size: 0.9em;
+}
+
 .links {
   text-decoration-line: none;
 }
