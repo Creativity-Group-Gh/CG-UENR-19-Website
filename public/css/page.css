@@ -24,6 +24,30 @@ span.label {
   font-size: 85%;
 }
 
+.link_text {
+  font-size: 1.3em;
+  margin: 10px;
+}
+
+#navigation a {
+  color: black;
+  font-family: "Space Mono", monospace;
+  text-decoration-line: none;
+}
+
+#navigation a:hover::after {
+  border-bottom: 3px solid #fe6993;
+}
+
+@keyframes fadeIn {
+  form {
+    border-bottom: 3px solid white;
+  }
+
+  to {
+    border-bottom: 3px solid #fe6993;
+  }
+}
 .highlight {
   background-color: rgba(254, 105, 147, 0.1);
   border-radius: 3px;
@@ -39,6 +63,9 @@ span.label {
   font-size: 1.2em;
 }
 
+#title {
+  text-align: center;
+}
 .smaller {
   font-size: 0.9em;
 }
@@ -76,7 +103,7 @@ span.label {
 }
 
 #wallpaper {
-  /*background-image: url("../images/cg.png"); */
+  background-image: url("../images/background.png");
   background-color: black;
 }
 /*Lay out for PC*/
@@ -91,9 +118,21 @@ span.label {
     overflow: auto;
   }
 
-  #content {
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  #enroll_screen,
+  #sponsors_images_section {
+    display: flex;
+    justify-content: center;
   }
 
+  #sponsors_images_section {
+    display: flex;
+    margin-top: 1em;
+  }
   #menu_layout {
     display: flex;
     width: 60%;
@@ -112,10 +151,11 @@ span.label {
   #content {
     padding-left: 5em;
     padding-right: 5em;
-    padding-top: 5em;
+    padding-top: 2em;
     overflow-y: scroll;
   }
 }
+
 /*Mobile display*/
 @media (max-width: 54em) {
   .pc_layout {
@@ -140,13 +180,37 @@ span.label {
     padding-right: 2em;
   }
 
+  #enroll_screen,
+  #sponsors_images_section {
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+  }
   #menu_layout {
     overflow-y: hidden;
   }
+
+  #navigation {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  #sponsors_images_section {
+    display: flex;
+  }
+}
+
+#sponsors {
+  text-align: center;
+  margin-top: 2em;
 }
 
 #content {
-  color: black;
+  color: rgba(0, 0, 0, 0.938);
   font-family: "Inconsolata", monospace;
   font-feature-settings: "liga" 0;
   font-size: 18.4px;
@@ -167,10 +231,18 @@ span.label {
   font-size: 1rem;
 }
 
+#wallpaper {
+  text-align: center;
+}
 button {
   margin: 5px;
   padding: 10px;
   border-radius: 0px;
   font-family: "Inconsolata", monospace;
   width: 300px;
+}
+
+#social_handles {
+  display: flex;
+  justify-content: center;
 }

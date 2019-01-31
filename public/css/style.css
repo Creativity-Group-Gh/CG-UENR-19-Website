@@ -23,7 +23,7 @@ body {
   height: 3rem;
 }
 .typing-simulator__cursor--active {
-  background-color: #1b1b1b;
+  background-color: #f1eeee;
 }
 .typing-simulator__cursor--inactive {
   background-color: transparent;

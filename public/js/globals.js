@@ -2,9 +2,9 @@ var instructors = [
   {
     address: "Hello!",
     name: "I am Botwe Emmanuel",
-    job1: "I an a Web Back-end Programmer",
-    job2: "I love Algorithms",
-    job3: "and I love Game dev. too"
+    job1: "I am a Programmer",
+    job2: "I love reading",
+    job3: "and I am going to be your  Instructor"
   },
   {
     address: "Welcome!",
@@ -15,7 +15,7 @@ var instructors = [
   }
 ];
 
-var index = 0;
+var index = 1;
 
 // var head = "Welcome!";
 // var des1 ="Edward Gyampo.";
