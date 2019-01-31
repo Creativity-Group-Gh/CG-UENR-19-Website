@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#title,
+#heading {
+  font-family: "Space Mono", monospace;
+  /* font-family: "Open Sans", sans-serif; */
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+span.label {
+  font-size: 85%;
+}
+
+.highlight {
+  background-color: rgba(254, 105, 147, 0.1);
+  border-radius: 3px;
+  color: #fe6993;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.3em 0;
+  line-height: 1em;
+  margin: 0;
+}
+
+.small {
+  font-size: 1.2em;
+}
+
+.links {
+  text-decoration-line: none;
+}
+#heading {
+  font-size: 0.9em;
+}
+@media (min-width: 55em) {
+  .input_text {
+    font-size: 2rem;
+    font-family: "Courgette", cursive;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 54em) {
+  .input_text {
+    font-size: 1em;
+    font-family: "Courgette", cursive;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+}
+
+#wallpaper {
+  /*background-image: url("../images/cg.png"); */
+  background-color: black;
+}
+/*Lay out for PC*/
+@media (min-width: 55em) {
+  .pc_layout {
+    display: flex;
+    width: 100%;
+  }
+
+  .pc_layout section {
+    height: 100vh;
+    overflow: auto;
+  }
+
+  #content {
+  }
+
+  #menu_layout {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  #wallpaper {
+    width: 40%;
+  }
+
+  #content {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    overflow-y: scroll;
+  }
+}
+/*Mobile display*/
+@media (max-width: 54em) {
+  .pc_layout {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #wallpaper {
+    height: 40vh;
+    width: 100%;
+  }
+
+  #content {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #menu_layout {
+    overflow-y: hidden;
+  }
+}
+
+#content {
+  color: black;
+  font-family: "Inconsolata", monospace;
+  font-feature-settings: "liga" 0;
+  font-size: 18.4px;
+  line-height: 1.6;
+}
+#black_overlay {
+  background-color: #060a0cbd;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#black_overlay {
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 0px;
+  font-family: "Inconsolata", monospace;
+  width: 300px;
+}
