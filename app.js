@@ -21,9 +21,12 @@ app.get("/", (req, res) => {
 
 //index route
 app.get("/index", (req, res) => {
-  // res.send("Home directory");
-  //res.send(JSON.stringify());
   res.render("pages/index");
+});
+
+//info route
+app.get("/info", (req, res) => {
+  res.render("pages/info");
 });
 
 app.listen(PORT, () => {

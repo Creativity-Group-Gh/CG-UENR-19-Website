@@ -33,25 +33,27 @@ span.label {
   font-weight: bold;
 }
 
-#navigation a {
+a {
   color: black;
   font-family: "Space Mono", monospace;
   text-decoration-line: none;
 }
 
-#navigation a:hover::after {
+a::after {
+  content: "";
+  display: block;
+  width: 0px;
   border-bottom: 3px solid #fe6993;
+  transition: width 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-  form {
-    border-bottom: 3px solid white;
-  }
-
-  to {
-    border-bottom: 3px solid #fe6993;
-  }
+#navigation span a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* transition: width 0.3s ease-in-out; */
 }
+
 .highlight {
   background-color: rgba(254, 105, 147, 0.1);
   border-radius: 3px;
@@ -115,6 +117,11 @@ span.label {
   background-image: url("../images/background.png");
   background-color: black;
 }
+#wallpaper2 {
+  background-image: url("../images/science.png");
+  background-color: black;
+}
+
 /*Lay out for PC*/
 @media (min-width: 55em) {
   .pc_layout {
@@ -157,11 +164,26 @@ span.label {
     width: 40%;
   }
 
+  #wallpaper2 {
+    width: 40%;
+  }
+
   #content {
     padding-left: 5em;
     padding-right: 5em;
-    padding-top: 2em;
+    padding-top: 1em;
     overflow-y: scroll;
+  }
+}
+
+@media (max-width: 40em) {
+  #wallpaper {
+    height: 400px;
+    width: 100%;
+  }
+  #wallpaper2 {
+    height: 400px;
+    width: 100%;
   }
 }
 
@@ -174,6 +196,10 @@ span.label {
   }
 
   #wallpaper {
+    height: 40vh;
+    width: 100%;
+  }
+  #wallpaper2 {
     height: 40vh;
     width: 100%;
   }
@@ -238,6 +264,10 @@ span.label {
 #black_overlay {
   color: white;
   font-size: 1rem;
+}
+
+#wallpaper2 {
+  text-align: center;
 }
 
 #wallpaper {

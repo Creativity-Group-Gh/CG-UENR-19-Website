@@ -15,6 +15,13 @@ var instructors = [
   }
 ];
 
+var images = [
+  "./images/design.jpg",
+  "./images/science.png",
+  "./images/science.png",
+  "./images/cuadros.png"
+];
+
 var index = 1;
 
 // var head = "Welcome!";
@@ -56,4 +63,7 @@ async function startBlinkingText() {
   let elem = document.querySelector(".typing-simulator__text");
   elem.innerHTML = "";
   await startBlinkingTextWrapper();
+  let image_ = document.querySelector("#wallpaper");
+  image_.style.backgroundImage = "url(" + images[index] + ")";
+  image_.style.transition = "background-image 0.2s ease-in-out";
 }
