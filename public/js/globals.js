@@ -2,8 +2,8 @@ var instructors = [
   {
     address: "Hello!",
     name: "I am Botwe Emmanuel",
-    job1: "I am a Programmer",
-    job2: "I love reading",
+    job1: "I am a Software Engineer,",
+    job2: "a Game developer",
     job3: "and I am going to be your  Instructor"
   },
   {
@@ -16,7 +16,7 @@ var instructors = [
   {
     address: "Hello World!",
     name: "I am Acquah Samuel ",
-    job1: "a programmer",
+    job1: "a programmer,",
     job2: "who loves business and reading",
     job3: "and am going to be your course assistant"
   }
