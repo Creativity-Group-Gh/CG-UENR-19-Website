@@ -1,8 +1,17 @@
 {
-  "name": "Web Development ",
+  "name": "Web Development Fundamentals",
   "description": "Building web pages with html, css and javascript. no frameworks",
-  "repository": "",
-  "logo": "",
-  "keywords": ["node", "express", "heroku"],
+  "repository": "https://git.heroku.com/webdevcg.git",
+  "logo": "https://webdevcg.herokuapp.com/images/cg1.png",
+  "keywords": [
+    "node",
+    "express",
+    "heroku",
+    "UENR",
+    "KUMASI HIVE",
+    "Creativity",
+    "cg",
+    "hive"
+  ],
   "image": "heroku/nodejs"
 }
