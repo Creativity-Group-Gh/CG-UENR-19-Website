@@ -174,8 +174,8 @@ span a::after {
   }
 
   #content {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     padding-top: 1em;
     overflow-y: scroll;
   }

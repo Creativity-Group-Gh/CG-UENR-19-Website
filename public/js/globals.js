@@ -12,17 +12,25 @@ var instructors = [
     job1: "I am an Artist",
     job2: " a Web UI Engineer",
     job3: "and  a Game Designer"
+  },
+  {
+    address: "Hello World!",
+    name: "I am Acquah Samuel ",
+    job1: "a programmer",
+    job2: "who loves business and reading",
+    job3: "and am going to be your course assistant"
   }
 ];
 
 var images = [
+  "./images/asteroids.jpg",
+  "./images/science.png",
+  "./images/background.png",
   "./images/design.jpg",
-  "./images/science.png",
-  "./images/science.png",
   "./images/cuadros.png"
 ];
 
-var index = 1;
+var index = 2;
 
 // var head = "Welcome!";
 // var des1 ="Edward Gyampo.";
@@ -42,7 +50,7 @@ var des4 = "";
 var simple_text = "";
 
 async function startBlinkingText() {
-  if (index >= 1) {
+  if (index >= 2) {
     index = 0;
   } else {
     index++;
