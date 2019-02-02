@@ -346,3 +346,8 @@ button:hover {
   background-color: #fe6993;
   background-position: left top;
 }
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
