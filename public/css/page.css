@@ -33,13 +33,13 @@ span.label {
   font-weight: bold;
 }
 
-a {
+span a {
   color: black;
   font-family: "Space Mono", monospace;
   text-decoration-line: none;
 }
 
-a::after {
+span a::after {
   content: "";
   display: block;
   width: 0px;
@@ -52,6 +52,10 @@ a::after {
   display: block;
   width: 100%;
   /* transition: width 0.3s ease-in-out; */
+}
+
+.inline {
+  display: inline;
 }
 
 .highlight {
@@ -78,6 +82,7 @@ a::after {
 
 .links {
   text-decoration-line: none;
+  color: blue;
 }
 
 .spon_hive {
@@ -273,13 +278,6 @@ a::after {
 #wallpaper {
   text-align: center;
 }
-button {
-  margin: 5px;
-  padding: 10px;
-  border-radius: 0px;
-  font-family: "Inconsolata", monospace;
-  width: 300px;
-}
 
 #social_handles {
   display: flex;
@@ -309,4 +307,42 @@ button {
 .text {
   margin: 0px;
   padding: 0px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 0px;
+  font-size: 1em;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  width: 300px;
+  border: 2px solid #fe6993;
+  background-size: 0px;
+  transition: background 0.5s ease-in-out;
+  display: block;
+
+  background: linear-gradient(to right, #fe6993 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right top;
+  transition: all 0.5s ease-out;
+}
+
+#white_hover {
+  color: blue;
+}
+
+#white_hover :hover {
+  color: white;
+}
+button a {
+  text-decoration: none;
+}
+button a:hover {
+  text-decoration: none;
+}
+button:hover {
+  border: 2px solid #fe6993;
+  background-color: #fe6993;
+  background-position: left top;
 }

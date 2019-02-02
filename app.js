@@ -29,6 +29,11 @@ app.get("/info", (req, res) => {
   res.render("pages/info");
 });
 
+//info route
+app.get("/enroll", (req, res) => {
+  res.render("pages/enroll");
+});
+
 app.listen(PORT, () => {
   console.log("the app is running ");
 });
