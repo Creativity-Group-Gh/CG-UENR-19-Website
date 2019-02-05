@@ -6,13 +6,7 @@ var instructors = [
     job2: "a Game developer",
     job3: "and I am going to be your  Instructor"
   },
-  {
-    address: "Welcome!",
-    name: "I am Edward Gyampo",
-    job1: "I am an Artist",
-    job2: " a Web UI Engineer",
-    job3: "and  a Game Designer"
-  },
+
   {
     address: "Hello World!",
     name: "I am Acquah Samuel ",
@@ -21,6 +15,13 @@ var instructors = [
     job3: "and am going to be your course assistant"
   }
 ];
+let gyampo = {
+  address: "Welcome!",
+  name: "I am Edward Gyampo",
+  job1: "I am an Artist",
+  job2: " a Web UI Engineer",
+  job3: "and  a Game Designer"
+};
 
 var images = [
   "./images/asteroids.jpg",
@@ -50,7 +51,7 @@ var des4 = "";
 var simple_text = "";
 
 async function startBlinkingText() {
-  if (index >= 2) {
+  if (index >= 1) {
     index = 0;
   } else {
     index++;
