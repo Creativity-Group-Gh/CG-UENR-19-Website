@@ -147,6 +147,8 @@ span a::after {
   #enroll_screen,
   #sponsors_images_section {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 
@@ -178,6 +180,11 @@ span a::after {
     padding-right: 3em;
     padding-top: 1em;
     overflow-y: scroll;
+  }
+
+  article img {
+    width: 50vw;
+    height: 50vh;
   }
 }
 
@@ -232,7 +239,7 @@ span a::after {
   }
 
   #navigation {
-    width: 100vw;
+    width: 80vw;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
@@ -242,8 +249,16 @@ span a::after {
   #sponsors_images_section {
     display: flex;
   }
+
+  article img {
+    width: 100vw;
+    height: 50vh;
+  }
 }
 
+article {
+  margin: 1em;
+}
 #sponsors {
   text-align: center;
   margin-top: 2em;
@@ -350,4 +365,8 @@ button:hover {
 iframe {
   width: 100vw;
   height: 100vh;
+}
+
+a button {
+  text-decoration-line: none;
 }
