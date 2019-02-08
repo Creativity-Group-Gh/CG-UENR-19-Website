@@ -144,10 +144,15 @@ span a::after {
     justify-content: space-around;
     margin-bottom: 2em;
   }
-  #enroll_screen,
-  #sponsors_images_section {
+  #enroll_screen {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  #sponsors_images_section {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -227,7 +232,13 @@ span a::after {
     padding-right: 2em;
   }
 
-  #enroll_screen,
+  #enroll_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
   #sponsors_images_section {
     display: flex;
     justify-content: space-around;
@@ -251,8 +262,8 @@ span a::after {
   }
 
   article img {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: auto;
   }
 }
 
