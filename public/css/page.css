@@ -381,3 +381,7 @@ iframe {
 a button {
   text-decoration-line: none;
 }
+
+.danger {
+  color: red;
+}
