@@ -40,7 +40,7 @@ app.get("/assignments", (req, res) => {
 });
 
 //lectures route
-app.get("/lectures", (req, res) => {
+app.get("/meetings", (req, res) => {
   res.render("pages/lectures");
 });
 
