@@ -34,7 +34,17 @@ app.get("/enroll", (req, res) => {
   res.render("pages/enroll");
 });
 
-//info route
+//assignment route
+app.get("/assignments", (req, res) => {
+  res.render("pages/assignments");
+});
+
+//lectures route
+app.get("/lectures", (req, res) => {
+  res.render("pages/lectures");
+});
+
+//instructions route
 app.get("/instructions", (req, res) => {
   res.render("pages/instructions");
 });
