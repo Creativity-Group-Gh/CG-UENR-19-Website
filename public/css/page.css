@@ -434,3 +434,7 @@ a button {
   background-color: tomato;
   margin-bottom: 30px;
 }
+
+#credits{
+  text-align: center;
+}
