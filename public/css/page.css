@@ -311,7 +311,7 @@ article {
   width: 80%;
 }
 #black_overlay {
-  background-color: #060a0cbd;
+  background-color: #060a0c50;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -435,6 +435,6 @@ a button {
   margin-bottom: 30px;
 }
 
-#credits{
+#credits {
   text-align: center;
 }
