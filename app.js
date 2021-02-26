@@ -48,6 +48,7 @@ app.get("/meetings", (req, res) => {
 app.get("/instructions", (req, res) => {
   res.render("pages/instructions");
 });
+
 //instructions route
 // app.get("/api/dictionary", (req, res) => {
 //   res.o
