@@ -5,7 +5,7 @@ const path = require("path");
 const jsonParser = bodyParser.json();
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+
 
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
@@ -54,6 +54,8 @@ app.get("/instructions", (req, res) => {
 //   res.o
 // });
 
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log("the app is running ");
 });
