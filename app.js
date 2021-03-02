@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
   });
 });
 
-//index route
+//@des    index route
 app.get("/index", (req, res) => {
   res.render("pages/index");
 });
